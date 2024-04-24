@@ -8,7 +8,7 @@ articles = {
 
 }
 
-def news_paper(request,topic):
+def news_paper(request,topic):   
     try:
         result= articles[topic]
         return HttpResponse(articles[topic])
